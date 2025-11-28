@@ -1,0 +1,108 @@
+html {
+    background: linear-gradient(to bottom,  rgb(169,3,41) 0%,44%,rgb(44, 0, 10) 100%);
+    color: white;
+    min-height: 100vh;
+}
+header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom,  rgb(234,239,181) 0%,rgb(216,232,71) 100%);
+    margin: 0;
+    padding: 1px;
+
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    
+    align-items: center;
+}
+.notTheMenu {
+    height: calc(100vh - 199px);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+footer {
+    color: black;
+    background: linear-gradient(to bottom,  rgb(216,232,71) 0%,rgb(234,239,181) 100%);
+    font-size: 0.8em;
+    margin-top: 0px;
+    padding: 10px;
+    height:50px;
+    font-family: serif;
+
+}
+
+.mainmenu a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+    height: 98%;
+    text-align: center;
+    
+}
+.mainmenu {
+    display: flex;
+
+    flex-direction:column;
+}
+
+.mainmenu-1 {
+    display:inline;
+    font-size: xx-large;
+}
+
+.mmLogo {
+    max-width: 300px;
+}
+
+.tel {
+    color:#C2002D;
+    text-decoration: none;
+}
+
+.tel:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:700px) {
+    .mainmenu-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .buttonAni {
+        margin: 20px;
+        padding: 20px;
+
+    }
+    .deskMenDiv {
+        display: none;
+        visibility: hidden;
+    }
+    .mmLogo {
+        max-width: 200px;
+    }
+}
+
+.buttonAni {
+    transition: letter-spacing 0.5s ease-out;
+    letter-spacing: 0em;
+    margin: 0;
+    padding: 0;
+}
+
+.buttonAni:hover {
+    letter-spacing: 0.3em;
+    color:rgb(255, 129, 109);
+}

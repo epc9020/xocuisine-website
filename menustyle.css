@@ -1,0 +1,225 @@
+.html {background: linear-gradient(to bottom, rgb(169,3,41) 0%, rgb(141, 0, 33) 100%);}
+
+.menuContainer {
+    display: flex;
+    align-items: center stretch;
+    justify-content: center;
+}
+
+.menuCategory {
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(254, 255, 204) 100%);
+    border: ridge #c21c10 4px;
+    color:black;
+    margin: 10px;
+    padding:10px;
+    border-radius: 6px;
+    flex: 1 1 300px;
+    max-width: 1540px;
+    flex-direction: column;
+}
+
+@media (max-width:830px) {
+    .menuContainer {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .menuCategory {
+        width: 90%;
+        flex: unset;
+    }
+
+}
+
+@media (max-width:415px) {
+    .index {
+        flex-direction: column;
+    }
+    .sindex {
+        margin-left: unset !important;
+        margin: unset !important;
+        padding:unset !important;
+    }
+    .cindex {
+        margin: unset;
+    }
+}
+
+.sindex {
+    margin-left: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:0;
+    color:#ff1100;
+}
+ol {
+    padding-left: 0px;
+}
+li {
+    display: flex;
+    margin-left: 0;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.none {
+    display:flex;
+    flex-direction: row;
+    margin-left: unset;
+    justify-content: unset;
+    margin-bottom: unset;
+}
+
+.item {
+    display:flex;
+    align-items: center;
+    flex: 1 1 auto;
+}
+.item::after {
+    content: "";
+    border-bottom: 2px dotted black;
+    flex: 1;
+    height: 10px;
+    margin: 0 5px;
+    align-self: center;
+}
+.yourChoice {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+    float: right;
+    border-right: dotted black 2px;
+    border-bottom: dotted black 2px;
+    padding-right: 14px;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+.yourChoice::after {
+    content: "";
+    display: flex;
+    width: calc(fit-content + 20px);
+}
+
+.spec {
+    color: black;
+    animation: special .8s infinite;
+}
+
+/* we ain never gon use the special ani i think rofl */
+
+@keyframes special {
+    0% {color:black}
+    49% {color:black}
+    50% {color:rgb(255, 0, 60)}
+    99% {color:rgb(255, 0, 60)}
+    100% {color:black}
+}
+
+.afteryc {
+    margin-top: 30px;
+}
+.desc {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(46, 46, 46);
+    margin-top: -13px;
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+table th {
+    background-color: rgb(169, 3, 41);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px dotted black;
+    border-right: 1px solid #c21c10;
+}
+
+table th:last-child {
+    border-right: none;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px dotted #c21c10;
+    border-right: 1px solid #c21c10;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
+table tr:hover {
+    background-color: rgb(254, 255, 204);
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+.pokeprice {
+    font-weight: bold;
+    color:rgb(255, 0, 60);
+}
+
+.pokeh1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:0;
+    font-size:1.7em;
+    color:#ff1100;
+}
+
+.pokesubnote {
+    font-size: .6em;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.index {
+    justify-content: center;
+    display: flex;
+}
+
+
+
+:target {
+    -webkit-animation: target-fade 3s 1;
+    -moz-animation: target-fade 3s 1;
+    animation: target-fade 3s 1;
+}
+
+@-webkit-keyframes target-fade {
+    0% { background-color: rgba(255,0,0,.5); }
+    100% { background-color: rgba(0,0,0,0); }
+}
+
+@-moz-keyframes target-fade {
+    0% { background-color: rgba(255,0,0,.5); }
+    100% { background-color: rgba(0,0,0,0); }
+}
+
+@keyframes target-fade {
+    0% { background-color: rgba(255,0,0,.5); }
+    100% { background-color: rgba(0,0,0,0); }
+}
