@@ -13,6 +13,11 @@
             <div style="padding:0 0 16px 0;color:rgb(194, 0, 45);font-weight: bold;">(939) 633-3233 | (939) 633-3535</div>
         </header>
         <main style="box-shadow: 0px 5px 40px black inset;">
+            <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="padding: 12px 16px; background-color: rgb(194, 0, 45); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 20px; cursor: pointer; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+                    ↑
+                </button>
+            </div>
             <div style="max-width: 1300px;align-items: center;justify-content: center;margin: auto;">
                 <h1 style="text-align: center;padding: 20px;margin-bottom: 0px;color:whitesmoke">Menu</h1>
                 <div>
@@ -52,6 +57,7 @@
                                 <li><a href="#deep-fried-rolls">Deep Fried Rolls</a></li>
                                 <li><a href="#specialty-rolls">Specialty Rolls</a></li>
                                 <li><a href="#maki-roll-or-hand-roll">Maki Roll or Hand Roll</a></li>
+                                <li><a href="#chefboat">Chef Boat</a></li>
                                 <li><a href="#sushi-pizza">Sushi Pizza</a></li>
                                 <li><a href="#pokebowl">Poke Bowl</a></li>
                             </ul>
@@ -207,9 +213,11 @@
                         <li><span class="item">Crab salad</span><span>$9.00</span></li>
                         <li><span class="item">Seaweed salad</span><span>$6.00</span></li>
                         <li><span class="item">Ika San Sai</span><span>$12.00</span></li>
+                        <li><span class="item">Octopus Salad</span><span>$12.00</span></li>
                         <li><span class="item">Pepper Tuna</span><span>$12.95</span></li>
                         <li><span class="item">Tuna Tataki</span><span>$12.95</span></li>
                         <li><span class="item">Salmon Tataki</span><span>$12.95</span></li>
+                        <li><span class="item">Seafood Salad</span><span>$12.95</span></li>
                         <li><span class="item">Kani Salad</span><span>$12.00</span></li>
                         <li><span class="item">Spicy Tuna Salad</span><span>$12.95</span></li>
                         <li><span class="item">Crazy Salad</span><span>$15.95</span></li>
@@ -220,6 +228,8 @@
                         <div class="desc">(fried wonton and green salad)</div>
                         <li><span class="item">Avocado /w Spicy Crab Stuffing</span><span>$16.95</span></li>
                         <div class="desc">(tostones and green salad)</div>
+                        <li><span class="item">Peony Roll</span><span>$9.50</span></li>
+                        <div class="desc">(avocado, lettuce, mango)</div>
                     </ol>
                 </div>
                 <div class="menuCategory">
@@ -318,7 +328,7 @@
             </div>
             <div class="menuContainer">
                 <div class="menuCategory">
-                    <h1>Maki Roll or Hand Roll</h1>
+                    <h1 id="maki-roll-or-hand-roll">Maki Roll or Hand Roll</h1>
                     <ol>
                         <li><span class="item">California</span><span>$8.50</span></li>
                         <li><span class="item">Philadelphia Roll</span><span>$9.50</span></li>
@@ -339,7 +349,7 @@
                     </ol>
                 </div>
                 <div class="menuCategory">
-                    <h1>Sushi Pizza</h1>
+                    <h1 id="sushi-pizza">Sushi Pizza</h1>
                     <p style="text-align: center;">Choice of tuna, salmon, shrimp, crab or yellowtail.</p>
                     <ol>
                         <li><span class="item">One topping</span><span>$14.95</span></li>
@@ -349,7 +359,7 @@
             </div>
             <div class="menuContainer">
                 <div class="menuCategory">
-                    <h1>Chef Boat</h1>
+                    <h1 id="chefboat">Chef Boat</h1>
                     
                     <ol style="border: red ridge 3px; border-radius: 6px;padding:8px">
                         <p style="font-size: 1.2em;">For one (includes 1 miso soup and 1 crab salad)</p>
