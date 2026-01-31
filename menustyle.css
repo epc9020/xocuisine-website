@@ -223,3 +223,13 @@ table tr:last-child td {
     0% { background-color: rgba(255,0,0,.5); }
     100% { background-color: rgba(0,0,0,0); }
 }
+
+.containSingle {
+    display:grid;
+    justify-content: center;
+}
+
+.singleCategory {
+    max-width: 900px !important;
+    width:100% !important;
+}
