@@ -24,6 +24,7 @@ main {
     align-items: center;
 }
 .notTheMenu {
+    min-height: 400px;
     height: calc(100vh - 199px);
     display: flex;
     padding: 20px;
